@@ -9,9 +9,7 @@ export default {
   name: 'App',
   inject: ['sessionService'],
   created() {
-    if (this.sessionService.isAuthenticated) {
-      alert('Вы авторизованы')
-    }
+    console.log(this.sessionService);
   }
 }
 </script>
